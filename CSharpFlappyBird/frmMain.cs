@@ -44,6 +44,7 @@ namespace CSharpFlappyBird
         {
             CheckGameStatus();
             CheckAndRemovePipes();
+            GroundAnimation();
 
             _tickCounter++;
             if (_tickCounter == 75)
@@ -190,6 +191,16 @@ namespace CSharpFlappyBird
 
             _startScreen.Location = new Point(52, 74);
             pnlCanvas.Controls.Add(_startScreen);
+        }
+
+        private void GroundAnimation()
+        {
+            if (pnlGround.Location.X <= -288)
+            {
+                pnlGround.Location = new Point(0, pnlGround.Location.Y);
+            }
+
+            pnlGround.Location = new Point(pnlGround.Location.X - 4, pnlGround.Location.Y);
         }
 
         private void btnExit_Click(object sender, EventArgs e)

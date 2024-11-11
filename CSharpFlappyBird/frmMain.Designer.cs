@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             pnlTop = new Panel();
+            lblTitle = new Label();
             btnExit = new Button();
             pnlCanvas = new Panel();
             pnlGround = new Panel();
-            lblTitle = new Label();
             pnlTop.SuspendLayout();
             pnlCanvas.SuspendLayout();
             SuspendLayout();
@@ -48,6 +48,17 @@
             pnlTop.Padding = new Padding(5, 0, 0, 0);
             pnlTop.Size = new Size(288, 30);
             pnlTop.TabIndex = 0;
+            // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = Color.DarkSlateGray;
+            lblTitle.Location = new Point(8, 6);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(88, 19);
+            lblTitle.TabIndex = 1;
+            lblTitle.Text = "Flappy Bird";
             // 
             // btnExit
             // 
@@ -78,22 +89,10 @@
             // pnlGround
             // 
             pnlGround.BackgroundImage = Properties.Resources._base;
-            pnlGround.Dock = DockStyle.Bottom;
             pnlGround.Location = new Point(0, 442);
             pnlGround.Name = "pnlGround";
-            pnlGround.Size = new Size(288, 70);
+            pnlGround.Size = new Size(576, 70);
             pnlGround.TabIndex = 0;
-            // 
-            // lblTitle
-            // 
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTitle.ForeColor = Color.DarkSlateGray;
-            lblTitle.Location = new Point(8, 6);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(88, 19);
-            lblTitle.TabIndex = 1;
-            lblTitle.Text = "Flappy Bird";
             // 
             // frmMain
             // 

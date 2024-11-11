@@ -47,6 +47,7 @@ namespace CSharpFlappyBird.Objects
 
         public void Start()
         {
+            _animation.Start();
             _gravityTimer.Start();
         }
 
